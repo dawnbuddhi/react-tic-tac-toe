@@ -21,6 +21,7 @@ graphQLServer.use('/graphql', bodyParser.json(), graphqlExpress({
   schema,
 }));
 //jhinga
+//performance nahi chalna chahiye
 
 graphQLServer.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
