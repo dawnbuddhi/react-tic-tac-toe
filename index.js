@@ -20,6 +20,7 @@ const graphQLServer = express();
 graphQLServer.use('/graphql', bodyParser.json(), graphqlExpress({
   schema,
 }));
+//jhinga
 
 graphQLServer.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
